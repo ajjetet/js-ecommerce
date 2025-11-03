@@ -1,0 +1,33 @@
+.text-green {
+  color: rgb(0, 113, 133)
+}
+
+.checkout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  position: sticky;
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.left-section {
+  padding: 10px
+}
+
+.amazon-logo {
+  height: 30px;
+}
+
+.left-section:hover {
+  outline: 1px solid black;
+  cursor: pointer;
+}
+
+.checkout-header-middle {
+  font-size: 20px;
+  font-weight: 500;
+}

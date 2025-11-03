@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/home/header.css">
+  <link rel="stylesheet" href="styles/home/main.css">
+  <link rel="stylesheet" href="styles/home/sidebar.css">
+
+  <style>
+    .item {
+      background-color: lightblue;
+      margin-bottom: 2px;
+      height: 200px;
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <!-- left section -->
+    <div class="js-left-section left-section">
+      <img class="amazon-icon" src="images/amazon-logo-white.png">
+      <img class="amazon-icon-small" src="images/amazon-icon-small.png">
+    </div>
+
+    <!-- middle section -->
+    <div class="middle-section">
+      <input class="js-product-search-input search-input" type="text" placeholder="Search">
+      <button class="js-product-search-button search-button">
+        <img class="search-icon" src="images/search-icon.png">
+      </button>
+    </div>
+
+    <!-- right-section -->
+    <div class="right-section">
+
+      <div class="return-and-orders">
+        <span>Returns <strong>& Orders</strong></span>
+      </div>
+
+      <div class="js-cart-container cart-container">
+
+        <div class="cart">
+          <img class="cart-image" src="images/cart-icon.png">
+          <span class="js-cart-quantity cart-quantity"></span>
+        </div>
+
+        <span class="cart-text">Cart</span>
+
+      </div>
+
+      <img class="hamburger-menu js-hamburger-menu" src="images/hamburger-menu.png">
+
+    </div>
+  </header>
+
+  <div class="hamburger-menu-list js-hamburger-menu-list hidden">
+    <div class="hamburger-menu-list-returns-and-orders js-hamburger-menu-list-returns-and-orders">Returns & Orders</div>
+    <div class="js-hamburger-menu-list-cart hamburger-menu-list-cart">Cart <span class="js-hamburger-menu-cart-quantity"></span></div>
+  </div>
+  <!-- Side bar -->
+  <nav class="js-sidebar-container sidebar-container">
+
+    <div class="js-home-link sidebar-link">
+      <img class="sidebar-icon" src="images/Nav/icons8-home-50.png">
+      <span class="tooltip home-icon-tooltip">Home</span>
+    </div>
+    <div class="js-category-link sidebar-link">
+      <img class="sidebar-icon" src="images/Nav/icons8-category-48.png">
+      <span class="tooltip category-icon-tooltip">Category</span>
+    </div>
+    <div class="js-profile-link sidebar-link">
+      <img class="sidebar-icon" src="images/Nav/icons8-male-user-48.png">
+      <span class="tooltip profile-icon-tooltip">Profile</span>
+    </div>
+    <div class="js-settings-link sidebar-link">
+      <img class="sidebar-icon" src="images/Nav/icons8-settings-50.png">
+      <span class="tooltip settings-icon-tooltip">Settings</span>
+    </div>
+    <div class="js-about-link sidebar-link">
+      <img class="sidebar-icon" src="images/Nav/icons8-about-24.png">
+      <span class="tooltip about-icon-tooltip">About</span>
+    </div>
+
+  </nav>
+
+  <!-- main container -->
+  <main class="js-main-container main-container">
+  </main>
+
+  <!-- template -->
+  <!-- make sure to keep it outside of main container so that it won't lost when erasing main container elements -->
+  <template id="js-product-template">
+    <div class="js-product-container product-container">
+      <div class="product-image-container">
+        <img class="js-product-image product-image">
+      </div>
+
+      <div class="product-details-container">
+        <div class="product-details-sectionA">
+          <div class="js-product-name product-name"></div>
+          <div class="product-rating-container product-rating-container">
+            <img class="js-product-rating product-rating">
+            <span class="js-rating-participants rating-participants"></span>
+          </div>
+          <div class="js-product-price product-price"></div>
+          <select class="js-product-quantity-select product-quantity-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <div class="product-details-sectionB">
+          <button class="js-addToCartButton addToCartButton">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </template>
+
+
+  <script type="module" src="scripts/home/main.js"></script>
+</body>
+
+</html>

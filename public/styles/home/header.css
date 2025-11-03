@@ -1,0 +1,180 @@
+.header {
+  background-color: rgb(19, 25, 33);
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.left-section {
+  margin-right: 40px;
+  padding: 7px;
+  border-radius: 2px;
+}
+
+.middle-section {
+  max-width: 850px;
+  min-width: 100px;
+  margin-right: 35px;
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.right-section {
+  width: 160px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left section */
+.amazon-icon {
+  height: 30px;
+  margin-top: 3px;
+}
+
+.amazon-icon-small {
+  height: 30px;
+  display: none;
+}
+
+/* Middle section */
+.search-input {
+  height: 37px;
+  width: 10px;
+  flex: 1;
+  border: none;
+  border-radius: 2px 0 0 2px;
+  font-size: 17px;
+
+  padding-left: 18px;
+}
+
+.search-input:focus {
+  outline: 2px solid gold;
+}
+
+.search-input::placeholder {
+  color: rgb(182, 173, 173);
+  font-size: 17px;
+}
+
+.search-button {
+  background-color: rgb(254, 189, 105);
+  height: 39px;
+  width: 44px;
+  border: none;
+  border-radius: 0 2px 2px 0;
+
+  margin-left: -3px;
+  cursor: pointer;
+}
+
+.search-icon {
+  height: 21px;
+}
+
+/* Right Section */
+.return-and-orders {
+  font-size: 14px;
+  color: white;
+  width: 60px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  border-radius: 2px;
+
+  cursor: default;
+}
+
+.cart-container {
+  width: 80px;
+  height: 48px;
+  padding: 0 4px;
+
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.cart-container:hover {
+  outline: 1px solid white;
+}
+
+.cart {
+  display: flex;
+  position: relative;
+}
+
+.cart-image {
+  height: 35px;
+}
+
+.cart-quantity {
+  width: 0px;
+  color: rgb(240, 136, 4);
+  font-weight: bold;
+  font-size: 18px;
+
+  position: absolute;
+  left: 30px;
+  top: -4px;
+
+  display: flex;
+  justify-content: center;
+}
+
+
+.cart-text {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+  top: 7px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 740px) {
+
+  .amazon-icon,
+  .return-and-orders,
+  .cart-container {
+    display: none;
+  }
+
+  .left-section {
+    margin-right: 10px;
+  }
+
+  .right-section {
+    width: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .amazon-icon-small,
+  .hamburger-menu {
+    display: inline-block;
+  }
+
+  .hamburger-menu {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Checkout</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/checkout/header.css">
+  <link rel="stylesheet" href="styles/checkout/main.css">
+
+  <link rel="stylesheet" href="styles/checkout/general.css">
+</head>
+
+<body>
+  <div class="checkout-container">
+
+    <!-- Header -->
+    <header class="checkout-header">
+
+      <div class="js-left-section left-section">
+        <img class="amazon-logo" src="images/amazon-logo.png">        
+      </div>
+
+      <div class="checkout-header-middle">
+        <span>Checkout (</span>
+        <span class="js-cart-quantity text-green"></span>
+        <span class="text-green">items)</span>
+      </div>
+
+      <img class="checkout-lock-icon" src="images/checkout-lock-icon.png">
+
+    </header>
+
+    <!-- main -->
+    <div class="main-container">
+      <div class="text-style-one review-your-order-text">Review your order</div>
+      <div class="wrapper">
+        <div class="order-summary">
+          <div class="text-style-two">Order Summary</div>
+          <div class="order-summary-A">
+            <div class="flex-space-between">
+              <span>items (<span class="js-cart-quantity"></span>)</span>
+              <span class="js-total-price"></span>
+            </div>
+            <div class="flex-space-between">
+              <span>Shipping & handling:</span>
+              <span class="bottom-underline-gray">0</span>
+            </div>
+          </div>
+          <div class="order-summary-B">
+            <div class="flex-space-between">
+              <span>Total before tax:</span>
+              <span class="js-total-before-tax"></span>
+            </div>
+            <div class="flex-space-between">
+              <span>Estimated tax (10%):</span>
+              <span class="js-tax"></span>
+            </div>
+          </div>
+          <div class="flex-space-between order-total">
+            <span>Order total:</span>
+            <span class="js-order-total">0</span>
+          </div>
+          <button class="order-summary-button">Place your order</button>
+        </div> <!--order-summary-->
+
+        <!-- Cart items -->
+        <div class="js-cart-items-container cart-items-container"></div>
+
+        <template class="js-cart-item-template">
+          <div class="item-container">
+            <div class="wrapper-two">
+              <div class="item-container-A">
+                <img class="item-image">
+                <div class="A-two">
+                  <div class="item-name text-style-three"></div>
+                  <div class="item-price"></div>
+                  <div>
+                    Quantity: <span class="item-quantity"></span>
+                    <span class="js-update-item update-item">Update</span>
+                    <span class="js-delete-item delete-item">Delete</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+
+      </div> <!--wrapper-->
+    </div> <!--main-container-->
+
+  </div> <!--checkout-container-->
+
+  <script src="scripts/checkout/checkout.js"></script>
+</body>
+
+</html>
