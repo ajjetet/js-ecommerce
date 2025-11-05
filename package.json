@@ -11,7 +11,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "a simple Node.js ecommerce website where products are displayed, you can add them to a shopping cart, and view the checkout section.",
+  "description": "a simple node.js ecommerce website where products are displayed, you can add them to a shopping cart, and view the checkout section.",
   "dependencies": {
     "better-sqlite3": "^12.4.1",
     "cors": "^2.8.5",
